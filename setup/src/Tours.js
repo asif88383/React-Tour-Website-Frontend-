@@ -5,12 +5,12 @@ const Tours = ({tours}) => {
   return (
     <section>
       <div className="title">
-        <h2>Tours</h2>
+        <h2>Our Tours</h2>
         <div className="underline"></div>
       </div>
       <div>
         {tours.map((tour) => {
-          return <Tour key={tour.id} {...tour}></Tour>
+          return <Tour key={tour.id} {...tour} removeTour={removeTour}></Tour>
   })}
       </div>
     </section>
